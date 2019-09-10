@@ -1,0 +1,6 @@
+framework module Pods_JittersTest {
+  umbrella header "Pods-JittersTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

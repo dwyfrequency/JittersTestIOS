@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		5F0FFF1E2326F8F9003F750B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FFF1C2326F8F9003F750B /* Main.storyboard */; };
 		5F0FFF202326F8FB003F750B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FFF1F2326F8FB003F750B /* Assets.xcassets */; };
 		5F0FFF232326F8FB003F750B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FFF212326F8FB003F750B /* LaunchScreen.storyboard */; };
+		732E04AA498416FDC52DC1F3 /* Pods_JittersTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92DF1A19E6A41DB99B0FE4E /* Pods_JittersTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		5F0FFF1F2326F8FB003F750B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F0FFF222326F8FB003F750B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F0FFF242326F8FB003F750B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EFF4CA5F739BBD822831EEB /* Pods-JittersTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JittersTest.debug.xcconfig"; path = "Target Support Files/Pods-JittersTest/Pods-JittersTest.debug.xcconfig"; sourceTree = "<group>"; };
+		7B96B7820E9C956E164EC588 /* Pods-JittersTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JittersTest.release.xcconfig"; path = "Target Support Files/Pods-JittersTest/Pods-JittersTest.release.xcconfig"; sourceTree = "<group>"; };
+		E92DF1A19E6A41DB99B0FE4E /* Pods_JittersTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JittersTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732E04AA498416FDC52DC1F3 /* Pods_JittersTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B8344D975C44D1BC6E12FBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EFF4CA5F739BBD822831EEB /* Pods-JittersTest.debug.xcconfig */,
+				7B96B7820E9C956E164EC588 /* Pods-JittersTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5F0FFF0C2326F8F9003F750B = {
 			isa = PBXGroup;
 			children = (
 				5F0FFF172326F8F9003F750B /* JittersTest */,
 				5F0FFF162326F8F9003F750B /* Products */,
+				0B8344D975C44D1BC6E12FBA /* Pods */,
+				8DA8F734E5E9957F2C299E02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = JittersTest;
 			sourceTree = "<group>";
 		};
+		8DA8F734E5E9957F2C299E02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E92DF1A19E6A41DB99B0FE4E /* Pods_JittersTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F0FFF272326F8FB003F750B /* Build configuration list for PBXNativeTarget "JittersTest" */;
 			buildPhases = (
+				4042234523F58C297A2B13B6 /* [CP] Check Pods Manifest.lock */,
 				5F0FFF112326F8F9003F750B /* Sources */,
 				5F0FFF122326F8F9003F750B /* Frameworks */,
 				5F0FFF132326F8F9003F750B /* Resources */,
+				C0FCA35BE51808A82A59B03B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +122,11 @@
 				TargetAttributes = {
 					5F0FFF142326F8F9003F750B = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -129,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4042234523F58C297A2B13B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JittersTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0FCA35BE51808A82A59B03B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JittersTest/Pods-JittersTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JittersTest/Pods-JittersTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JittersTest/Pods-JittersTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F0FFF112326F8F9003F750B /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		5F0FFF282326F8FB003F750B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EFF4CA5F739BBD822831EEB /* Pods-JittersTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +371,7 @@
 		};
 		5F0FFF292326F8FB003F750B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B96B7820E9C956E164EC588 /* Pods-JittersTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
