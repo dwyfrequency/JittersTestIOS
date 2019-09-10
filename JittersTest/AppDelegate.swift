@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        PilgrimManager.shared().configure(withConsumerKey: "CLIENT_ID", secret: "CLIENT_SECRET", delegate: self, completion: nil)
+        PilgrimManager.shared().configure(withConsumerKey: CLIENT_ID, secret: CLIENT_SECRET, delegate: self, completion: nil)
         
         return true
     }

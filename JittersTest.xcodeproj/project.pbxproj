@@ -12,6 +12,7 @@
 		5F0FFF1E2326F8F9003F750B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FFF1C2326F8F9003F750B /* Main.storyboard */; };
 		5F0FFF202326F8FB003F750B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FFF1F2326F8FB003F750B /* Assets.xcassets */; };
 		5F0FFF232326F8FB003F750B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FFF212326F8FB003F750B /* LaunchScreen.storyboard */; };
+		5F8EF0E32327417100079015 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8EF0E22327417100079015 /* Constants.swift */; };
 		732E04AA498416FDC52DC1F3 /* Pods_JittersTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92DF1A19E6A41DB99B0FE4E /* Pods_JittersTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		5F0FFF1F2326F8FB003F750B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F0FFF222326F8FB003F750B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F0FFF242326F8FB003F750B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F8EF0E22327417100079015 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6EFF4CA5F739BBD822831EEB /* Pods-JittersTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JittersTest.debug.xcconfig"; path = "Target Support Files/Pods-JittersTest/Pods-JittersTest.debug.xcconfig"; sourceTree = "<group>"; };
 		7B96B7820E9C956E164EC588 /* Pods-JittersTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JittersTest.release.xcconfig"; path = "Target Support Files/Pods-JittersTest/Pods-JittersTest.release.xcconfig"; sourceTree = "<group>"; };
 		E92DF1A19E6A41DB99B0FE4E /* Pods_JittersTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JittersTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 				5F0FFF1F2326F8FB003F750B /* Assets.xcassets */,
 				5F0FFF212326F8FB003F750B /* LaunchScreen.storyboard */,
 				5F0FFF242326F8FB003F750B /* Info.plist */,
+				5F8EF0E22327417100079015 /* Constants.swift */,
 			);
 			path = JittersTest;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				5F0FFF1B2326F8F9003F750B /* ViewController.swift in Sources */,
 				5F0FFF192326F8F9003F750B /* AppDelegate.swift in Sources */,
+				5F8EF0E32327417100079015 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
